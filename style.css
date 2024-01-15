@@ -3,18 +3,72 @@ Settings
 ------------------------*/
 
 :root {
-    
+   --black: #000; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--black);
+    border: 1px solid black;
+}
+
+.centred {
+    text-align: center;
+}
+
+.hr-centred {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*------------------------
 Header 
 ------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 /*------------------------
 Navigation 
 ------------------------*/
+ul {
+    display: flex;
+    list-style: none;
+}
 
+ul > li {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+ul > li > a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: var(--black);
+}
+
+a:hover {
+    color: grey;
+}
 
 /*------------------------
 About
