@@ -29,5 +29,7 @@ As a potential client, I want to:
 Use the automatic trigger functionality of your GitHub project board.
 
 # Wireframes
+Website view for Desktop view: 
 
+![Screenshot 2024-01-14 at 05 21 08](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/4c762287-8bbc-4aeb-a112-098df2279cd4)
 
