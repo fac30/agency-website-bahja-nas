@@ -28,4 +28,6 @@ As a potential client, I want to:
 ## Stretch Goal 
 Use the automatic trigger functionality of your GitHub project board.
 
+# Wireframes
+
 
