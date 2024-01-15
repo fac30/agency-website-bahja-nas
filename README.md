@@ -29,7 +29,15 @@ As a potential client, I want to:
 Use the automatic trigger functionality of your GitHub project board.
 
 # Wireframes
-Website view for Desktop view: 
+Initial ideas for the agency website. 
 
+## Website wireframe view for Desktop view: 
 ![Screenshot 2024-01-14 at 05 21 08](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/4c762287-8bbc-4aeb-a112-098df2279cd4)
+
+## Website wireframe Mobile view: 
+![Screenshot 2024-01-14 at 05 46 46](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/7b044dba-9c5d-4422-9fc5-eab342dbce5b)
+
+## Website wireframe for Tablet view: 
+![Screenshot 2024-01-14 at 13 02 10](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/9da40ccf-8ab6-4668-b300-1cca56c88731)
+
 
