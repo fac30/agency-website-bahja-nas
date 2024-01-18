@@ -78,22 +78,97 @@ About
 /*------------------------
 Team Members
 ------------------------*/
+.team-members {
+    display: flex;
+    border: 1px solid orange;
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.team-members figure img {
+    width: 60%;
+    height: 70%;
+    object-fit: scale-down ;
+}
 
 
 /*------------------------
 Cats
 ------------------------*/
+.cats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    border: 2px solid black;
+}
 
+.grid-item {
+    text-align: center;
+    border: 1px dotted blue;
+}
+
+.grid-item img {
+    width: 65%;
+}
 
 /*------------------------
 Contact Form
 ------------------------*/
+#form {
+    border: 1px solid #000;
+    width: 75%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label, input, textarea, button {
+  display: block;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid hsl(220, 10%, 75%);
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 50%;
+    padding: 0.75rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: hsl(220, 20%, 96%);
+    transition: background-color 0.2s; */
+}
+
+button:hover {
+  background-color: hsl(220, 20%, 90%);
+}
 
 
 /*------------------------
 Footer
 ------------------------*/ 
+footer {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 2rem;
+}
 
+footer #left {
+    float: left;
+}
+
+footer #right {
+    float: right;
+}
 
 /*------------------------
 Media Queries
