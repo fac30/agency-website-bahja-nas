@@ -1,10 +1,10 @@
-const siteName  = 'Nas Choudhury';
+const siteName  = 'Pawsitive Haven Adoption Agency';
 
 /* footer */
 
 // copyright date, left div
 let year = new Date().getFullYear();
-const copyRight = `&copy;${year} - ${siteName} Portfolio`;
+const copyRight = `&copy; ${year} - ${siteName} - All rights reserved.`;
 let currentYear = document.querySelector('#currentYear').innerHTML = copyRight;
 
 // right div

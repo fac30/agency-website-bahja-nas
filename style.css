@@ -13,7 +13,7 @@ Settings
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -21,7 +21,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: var(--black);
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.width-95 {
+    width: 95%;
 }
 
 .centred {
@@ -32,6 +36,48 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #000;
+}
+
+.hr-thick {
+    border: 2px solid #000;
+}
+
+.hr-small-centred {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #000;
+}
+
+.section-spacing {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.margin-centred {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /*------------------------
@@ -41,6 +87,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 4px solid #000 ;
+    /* position: fixed;
+    width: 85%;
+    top: 0px;
+    z-index: 10; */
+    
 }
 
 
@@ -73,24 +125,47 @@ a:hover {
 /*------------------------
 About
 ------------------------*/
+.about-text {
+    
+    padding: 0.5rem; 
+    text-align: justify;
+}
 
 
 /*------------------------
 Team Members
 ------------------------*/
-.team-members {
+/* .team-members {
     display: flex;
+    justify-content: space-between;
+
     border: 1px solid orange;
     width: 95%;
     height: 100%;
     overflow: hidden;
+    
+} */
+
+.team-members figure {
+    /* border: 5px solid black; */
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: justify;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    margin-bottom: 1rem;
+    
 }
 
 .team-members figure img {
-    width: 60%;
-    height: 70%;
-    object-fit: scale-down ;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 0.25rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
+
+
 
 
 /*------------------------
@@ -98,25 +173,35 @@ Cats
 ------------------------*/
 .cats-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    border: 2px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    /* border: 2px solid black; */
 }
 
 .grid-item {
     text-align: center;
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
+    margin-bottom: 1rem;
 }
 
 .grid-item img {
-    width: 65%;
+    width: 90%;
+    border-radius: 10px;
 }
+
+.grid-item figcaption {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*------------------------
 Contact Form
 ------------------------*/
 #form {
     border: 1px solid #000;
+    border-radius: 5px;
     width: 75%;
     padding: 1rem;
     margin-left: auto;
@@ -163,11 +248,13 @@ footer {
 }
 
 footer #left {
-    float: left;
+   
+    margin-left: 1rem;
 }
 
 footer #right {
-    float: right;
+    
+    margin-right: 1rem;
 }
 
 /*------------------------
