@@ -1,6 +1,12 @@
 const siteName  = 'Pawsitive Haven Adoption Agency';
 
-/* footer */
+
+
+
+
+/* -----
+Footer 
+----- */
 
 // copyright date, left div
 let year = new Date().getFullYear();
