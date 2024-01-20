@@ -17,7 +17,7 @@ html {
     line-height: 1.2;
     font-family:'Courier New', Courier, monospace;
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    scroll-padding-top: 11rem;
 }
 
 body {
@@ -111,26 +111,26 @@ header {
 Navigation 
 ------------------------*/
 
-ul {
+.navbar-links ul {
     display: flex;
     list-style: none;
 }
 
-ul > li {
+.navbar-links > ul > li {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
 }
 
-ul > li > a {
+.navbar-links ul > li > a {
     font-size: 20px;
     text-decoration: none;
 }
 
-a:link, a:visited, a:active {
+.navbar-links ul > li > a:link, a:visited, a:active {
     color: var(--black);
 }
 
-a:hover {
+.navbar-links ul > li > a:hover {
     color: gray;
     text-decoration: underline;
 }
@@ -240,15 +240,113 @@ footer {
 }
 
 footer #left {
-   
     margin-left: 1rem;
 }
 
 footer #right {
-    
     margin-right: 1rem;
 }
 
 /*------------------------
 Media Queries
 ------------------------*/
+
+.toggle-button {
+    position: absolute;
+    top: 4rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 0.3rem;
+    width: 150%;
+    background-color: #000;
+    border-radius: 10px;
+    
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 15rem;
+    }
+
+    .hiddenText {
+        display: none;
+    }
+
+    .readMoreBtn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .readMoreBtn:hover {
+        background-color: #2980b9;
+    }     
+}
+
+@media only screen and (min-width: 720px) {
+    
+    .readMoreBtn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    
+    footer #left {
+        font-size: small;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer #right {
+        font-size: small;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
