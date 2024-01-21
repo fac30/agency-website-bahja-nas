@@ -83,6 +83,22 @@ p {
     line-height: 1.5;
 }
 
+button[type="button"], button[type="submit"] {
+    width: 50%;
+    padding: 0.75rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*------------------------
 Header 
 ------------------------*/
@@ -170,7 +186,13 @@ Cats
 .cats-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+}
+
+.hide-cat-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .grid-item {
@@ -218,17 +240,6 @@ textarea {
     height: 100px;
 }
 
-button {
-    width: 50%;
-    padding: 0.75rem 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-button:hover {
-  background-color: hsl(220, 20%, 90%);
-}
-
 /*------------------------
 Footer
 ------------------------*/ 
@@ -270,6 +281,23 @@ Media Queries
     
 }
 
+.display-content {
+    display: block!important;
+}
+
+.read-more-btn {
+    display: none;
+}
+
+/* header, about and team members */
+
+@media only screen and (max-width: 425px) {
+
+    header img {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 720px) {
     
     .toggle-button {
@@ -308,29 +336,64 @@ Media Queries
         scroll-padding-top: 15rem;
     }
 
-    .hiddenText {
+    .extra-content {
         display: none;
     }
 
-    .readMoreBtn {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
+    button.read-more-btn {
+        display: block;
     }
-
-    .readMoreBtn:hover {
-        background-color: #2980b9;
-    }     
 }
 
-@media only screen and (min-width: 720px) {
+/* cats images related */
+
+@media only screen and (max-width: 650px) {
+
+    .hide-cat-image {
+        display: none;
+    }
     
-    .readMoreBtn {
+    button.display-image-btn {
+        display: block;
+    }
+
+    .cats-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+    button.display-image-btn {
         display: none;
     }
 }
+
+/* form */
+
+@media only screen and (max-width: 925px) {
+
+    #form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    #form {
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #form {
+        width: 95%;
+    }
+}
+
+/* footer */
 
 @media only screen and (max-width: 1300px) {
     
@@ -350,3 +413,4 @@ Media Queries
         margin-right: auto;
     }
 }
+

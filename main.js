@@ -14,14 +14,49 @@ toggleBtn.addEventListener('click', () => {
 
 
 /* -----
-Hidden Text
+Buttons - Read More / Read Less and Show More / Show Less
 ----- */
 
-const toggleText = () => {
-    const additionalText = document.querySelector('.additional-text');
-    additionalText.classList.toggle('hiddenText');
+let readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+readMoreBtns.forEach(btn => {
+    btn.addEventListener('click', changeClass);
+})
+
+function changeClass(e) {
+    let btn = e.target;
+    let content = e.target.parentNode;
+    let toggleEl = content.querySelector('.extra-content');
+
+    toggleEl.classList.toggle('display-content');
+
+    if (toggleEl.classList.contains('display-content')) {
+        btn.innerHTML = 'Read Less...';
+    } else {
+        btn.innerHTML = 'Read More...'
+    }
 }
 
+const displayImageBtn = document.querySelector('.display-image-btn');
+
+displayImageBtn.addEventListener('click', showImages);
+
+function showImages(e) {
+    const btn = e.target;
+    let parentContainer = e.target.parentNode;
+    console.log(parentContainer);
+    let images = parentContainer.querySelector('.hide-cat-image');
+    console.log(images)
+
+    images.classList.toggle('display-content');
+
+    if (images.classList.contains('display-content')) {
+        btn.innerHTML = 'Show Less...';
+    } else {
+        btn.innerHTML = 'Show More...'
+    }
+
+}
 
 /* -----
 Footer 
