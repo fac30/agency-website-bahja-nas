@@ -1,5 +1,7 @@
 # Pawsitive Haven Adoption Agency
----
+
+![Contributors](https://img.shields.io/github/contributors/fac30/nas-isaac-bahja-agency?style=plastic) ![Forks](https://img.shields.io/github/forks/fac30/nas-isaac-bahja-agency) ![Stars](https://img.shields.io/github/stars/fac30/nas-isaac-bahja-agency) ![Issues](https://img.shields.io/github/issues/fac30/nas-isaac-bahja-agency)
+
 
 ## Description 
 
@@ -12,7 +14,6 @@ The development process was not without its share of challenges. Adapting to per
 __Initial Designs__
 
 ![initial design of website and mobile](img/markdown/design.png)
-
 
 > Initial design of website and mobile
 
@@ -29,56 +30,28 @@ Currently these are the Lighthouse scores for the site which we expect to mainta
 
 <img src="img/markdown/score.png" alt="Lighthouse Score" width="50%" />
 
----
+> Lighthouse score via. Developer Tools from Google Chrome
+
 
 ## Installation
 
-The site can be forked or cloned as follows:
+The site can be forked as per the link above or cloned locally by copying and pasting the following link:
+
+```sh
+   git clone https://github.com/fac30/nas-isaac-bahja-agency.git
+```
+
+The site can be run locally using the ```index.html``` file and a live server i.e. vscode.
 
 
+## Credits
 
+The collaborators on this project are as follows:
 
-<!-- Project 1: Agency website
+- [Isaac GitHub repo](https://github.com/PrinceAyo1?tab=overview&from=2024-01-01&to=2024-01-23)
+- [Bahja GitHub repo](https://github.com/bajii2020)
+- [Nas GitHub repo](https://github.com/nascho)
 
-## Welcome to 'Pawsitive Haven Adoption Agency'. 
-An agency website created for animal lovers to adopt a furry feline 🐈‍⬛ 🐾
-
-Website created and designed by Bahja and Nas. 
-
-## Core Stories 
-As a potential client, I want to:
-- See information about each member of your team so that I can know who you are
-- Browse your website on mobile, tablet, and desktop devices
-- Click to navigate to different sections of your webpage
-- Contact you to enquire about working with you
-- Visit your website at a publicly accessible domain name
-
-## Additionally, as a visually impaired user, I want to:
-- Navigate your website using keyboard controls
-- Hear my screen reader describe the content on your website
-
-## Acceptance Criteria 
-### User stories come with acceptance criteria - a detailed scope of a user’s requirements.
-- Navigation menu
-- 'About us’ section
-- Contact form
-- A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
-- Information from the form doesn’t get submitted until the user clicks a button
-
-## Stretch Goal 
-Use the automatic trigger functionality of your GitHub project board.
-
-# Wireframes
-Initial ideas for the agency website. 
-
-## Website wireframe view for Desktop view: 
-![Screenshot 2024-01-14 at 05 21 08](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/4c762287-8bbc-4aeb-a112-098df2279cd4)
-
-## Website wireframe Mobile view: 
-![Screenshot 2024-01-14 at 05 46 46](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/7b044dba-9c5d-4422-9fc5-eab342dbce5b)
-
-## Website wireframe for Tablet view: 
-![Screenshot 2024-01-14 at 13 02 10](https://github.com/fac30/agency-website-bahja-nas/assets/93523551/9da40ccf-8ab6-4668-b300-1cca56c88731) -->
-
-
-
+ Thanks to guidance from FAC facilitators:
+- [Nich GitHub repo](https://github.com/nichgalzin)
+- [Beth GitHub repo](https://github.com/eliazzo)
