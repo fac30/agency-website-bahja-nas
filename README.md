@@ -25,6 +25,10 @@ Improved Responsiveness: Ensuring a more seamless experience for users by enhanc
 
 These planned enhancements reflect our commitment to continuous improvement and delivering an even more user-friendly platform for cat adoption.
 
+Currently these are the Lighthouse scores for the site which we expect to maintain:
+
+<img src="img/markdown/score.png" alt="Lighthouse Score" width="50%" />
+
 ---
 
 ## Installation
